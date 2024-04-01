@@ -13,13 +13,13 @@ const app = express();
 app.use(express.json());
 app.use(cors({
   credentials: true,
-  origin: 'http://localhost:3000'
+  origin: 'http://0.0.0.0/'
 }));
 app.use(cookieParser());
 
 dotenv.config();
 
-const PORT = 80;
+const PORT = process.env.PORT;
 const MONGO_URL = 'mongodb+srv://iamartyayadav:Ypf8KjNEXTlhLtdX@cluster0.ftzu6ds.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const SECRET = process.env.SECRET;
 
