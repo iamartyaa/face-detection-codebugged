@@ -19,8 +19,8 @@ app.use(cookieParser());
 
 dotenv.config();
 
-const PORT = process.env.PORT;
-const MONGO_URL = process.env.MONGO_URL;
+const PORT = 80;
+const MONGO_URL = 'mongodb+srv://iamartyayadav:Ypf8KjNEXTlhLtdX@cluster0.ftzu6ds.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const SECRET = process.env.SECRET;
 
 //REGISTER
