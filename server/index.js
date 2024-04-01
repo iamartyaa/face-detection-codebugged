@@ -11,15 +11,15 @@ import * as faceapi from 'face-api.js';
 const app = express();
 
 app.use(express.json());
-app.use(cors({
-  credentials: true,
-  origin: 'http://0.0.0.0/'
-}));
+// app.use(cors({
+//   credentials: true,
+//   origin: 'http://0.0.0.0/'
+// }));
 app.use(cookieParser());
 
 dotenv.config();
 
-const PORT = process.env.PORT;
+const PORT = 10000;
 const MONGO_URL = 'mongodb+srv://iamartyayadav:Ypf8KjNEXTlhLtdX@cluster0.6cddmpt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const SECRET = process.env.SECRET;
 
