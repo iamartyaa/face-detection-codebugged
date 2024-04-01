@@ -21,7 +21,7 @@ dotenv.config();
 
 const PORT = 80;
 const MONGO_URL = 'mongodb+srv://iamartyayadav:Ypf8KjNEXTlhLtdX@cluster0.ftzu6ds.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
-const SECRET = process.env.SECRET;
+const SECRET = 'simranyadav';
 
 //REGISTER
 app.post('/register', async (req, res) => {
